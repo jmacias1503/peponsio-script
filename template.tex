@@ -1,0 +1,56 @@
+\documentclass{memoir}
+\usepackage[spanish,mexico]{babel}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{mathptmx}
+\hypersetup{
+	pdftitle={Formato para la Bit\'acora de Procedimientos},
+	colorlinks=true,
+}
+\geometry{a4paper}
+\input \jobname.info
+\renewcommand{\baselinestretch}{1.9}
+\begin{document}
+\begin{center}
+	\textbf{FORMATO PARA LA BIT\'ACORA DE PROCEDIMIENTOS} {\small(\name)}
+\end{center}
+Edad: \age\hspace{2cm} Sexo al Nacimiento:\asab\\
+Peso: \weight\hspace{2cm} Talla: \talla\\
+Estudiante de la Universidad (S\'i o No): \undergrad\\
+Carrera o Profesi\'on: \career\\
+Horas a la semana de actividad f\'isica o ejercicio (Las sesiones deben de ser m\'inimo de 1 hora continua para ser catalogada como tal): \horasejercicio\\~\\
+POR LO MENOS 100\\
+\fbox{\parbox{\textwidth}{
+	Frecuencia Cardiaca: \heartrate BPM\\
+	Frecuencia Respiratoria: \breathrate FR\\
+	Tensi\'on Arterial: \presion\\~\\
+	Auscultaci\'on de Ruidos Respiratorios: (S\'i o No): S\'i\\
+	Menciona si hubo alguna alteraci\'on\\
+	Auscultaci\'on de Movimientos Perist\'alticos: (S\'i o No): S\'i\\
+	Menciona si hubo alguna alteraci\'on:
+}}~\\~\\
+AL MENOS 50\\
+\fbox{\parbox{\textwidth}{
+	Palpaci\'on de pulso perif\'erico (S\'i o No): S\'i\\
+	Menciona si huba alguna alteraci\'on: \\
+	Palpaci\'on de pulso central (S\'i o No): S\'i\\
+	Menciona si hubo alguna alteraci\'on: \\
+	Palpaci\'on del abdomen (S\'i o No): S\'i\\
+	Menciona si hubo alguna alteraci\'on
+}}
+\vfill
+\begin{center}
+	\begin{tabular}{c}
+		\makebox[8cm]{\hrulefill}\\
+		INICIALES Y FIRMA DEL PARTICIPANTE\\
+	\end{tabular}
+\end{center}
+\end{document}
